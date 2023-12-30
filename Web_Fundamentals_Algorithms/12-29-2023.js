@@ -9,13 +9,24 @@ Given the integer n, return the number of complete rows of the staircase you wil
 */
 
 function arrangeCoins(n){
-    //your code here
-    let arry = []
-    while (n > 0){
-        arry++
-        n--
+    // your code here
+    // let arry = []
+    // let temp = []
+    // while (n > 0 && temp > 0){
+    //     temp += []
+    //     n--
+    // }
+    // return arry
+    let k = 0;
+    let sum = 0;
+
+    while (sum <= n) {
+        k++;
+        sum += k;
     }
-    return arry
+
+    // Since the loop exits when sum exceeds n, we need to return k - 1
+    return k - 1;
 }
 
 
