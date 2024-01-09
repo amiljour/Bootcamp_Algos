@@ -44,19 +44,25 @@ function acronymize(str) {
 
     // Step 3: Split the input into an array of words - .split()
 
-    let y = str.split('')
-    console.log(y)
+    let stingArry = str.split('')
 
     // Step 4: Loop through each word in the array
     //   Step 4.1: Check if the current word is not an empty string
     //   Step 4.2: Take the first character of the word, convert it to uppercase, and add it to the acroynm
 
-    acronym += y[0]
-    for (var x = 0; x < y.length; x++) {
-        if (y[x] === " ") {
-            acronym += y[x + 1]
+    acronym += stingArry[0]
+    for (var index = 0; index < stingArry.length; index++) {
+        if (stingArry[index] === " ") {
+            acronym += stingArry[index + 1]
         }
     }
+    
+    // acronym += stingArry[0]
+    // for (var index = 0; index < stingArry.length; index++) {
+    //     if (stingArry[index] === " ") {
+    //         acronym += stingArry[index + 1]
+    //     }
+    // }
 
     //Step 5: Return the constructed acroynm
 
