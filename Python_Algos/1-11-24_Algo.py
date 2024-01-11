@@ -26,13 +26,13 @@ expected4 = False
 #    * @returns {boolean} Whether the given str is a palindrome or not.
 #    */
 def isPalindrome(str):
-    
+
     backwards_string = ''
-    y = (len(str) - 1)
+    string_length = (len(str) - 1)
 
     for index in str:
-        backwards_string += str[y]
-        y -= 1
+        backwards_string += str[string_length]
+        string_length -= 1
 
     if backwards_string == str:
         return True
