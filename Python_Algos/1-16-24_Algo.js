@@ -1,6 +1,6 @@
 /* 
-  Given an array of strings
-  return the number of times each string occurs (a frequency / hash table)
+    Given an array of strings
+    return the number of times each string occurs (a frequency / hash table)
 */
 
 const arr1 = ["a", "a", "a"];
