@@ -40,27 +40,30 @@ to the original position.
  */
 
 function rotateStr(str, amnt) {
-//   // create a counter to check the amount
+    let len =  str.length
+if ( len === 0 || amnt === 0 || amnt % len === 0){
+    return str
+}
+amnt = amnt % len;
+return str.substring(len - amnt) + str.substring(0, len - amnt);
+}
+console.log(rotateStr(str, 8))
+
+
+
+
+
+
+// create a counter to check the amount
 //   let count = amnt;
 //   let newStr = ''
-//   // while amount it greater then 0 it will run what is in the loop.
+// while amount it greater then 0 it will run what is in the loop.
 //   for (let i = 0; i < str.length; i++) {
 //     while (count > 0) {
 //       newStr[i] = str[i + 1];
 //       console.log(newStr)
 //       count--;
-      
 //     }
 //   }
 //   return str
-let len =  str.length
-if ( len === 0 || amnt === 0 || amnt % len === 0){
-    return str
-}
-amnt = amnt % len;
-console.log(str.substring(len - amnt))
-console.log(str.substring(0, len - amnt))
-return str.substring(len - amnt) + str.substring(0, len - amnt);
-}
 /*****************************************************************************/
-console.log(rotateStr(str, 8))
