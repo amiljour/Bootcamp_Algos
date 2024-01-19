@@ -48,6 +48,9 @@ amnt = amnt % len;
 return str.substring(len - amnt) + str.substring(0, len - amnt);
 }
 console.log(rotateStr(str, 8))
+console.log(rotateStr(str, 10))
+console.log(rotateStr(str, 2))
+console.log(rotateStr(str, 6))
 
 
 
