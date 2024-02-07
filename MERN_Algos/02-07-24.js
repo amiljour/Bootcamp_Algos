@@ -25,21 +25,42 @@ const arrTest = [4, 5, 1, 3, 6, 7, 10, 2, 8, 9];
 // 👉 Presenter
 // 👉 Navigator
 
+// Using While loops
 function selectionSort(arr) {
     // your code here
-    for (let i = 0; i < arr.length; i++){
+    let i = 0
+    while (i < arr.length){
         let minIndex = i
-        for (let j = i + 1 ; j < arr.length; j++){
+        let j = i + 1
+        while (j < arr.length){
             if (arr[i] > arr[j]){
                 minIndex = j
                 let temp = arr[minIndex]
                 arr[minIndex] = arr[i]
                 arr[i] = temp
             }
+            j++
         }
+        i++
     }
     return arr
 }
+
+// Using For loops
+// function selectionSort(arr) {
+//     for (let i = 0; i < arr.length; i++){
+//         let minIndex = i
+//         for (let j = i + 1 ; j < arr.length; j++){
+//             if (arr[i] > arr[j]){
+//                 minIndex = j
+//                 let temp = arr[minIndex]
+//                 arr[minIndex] = arr[i]
+//                 arr[i] = temp
+//             }
+//         }
+//     }
+//     return arr
+// }
 
 // test cases
 console.log(selectionSort(myArr));
