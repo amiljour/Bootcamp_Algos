@@ -47,25 +47,25 @@ const arrTest = [4, 5, 1, 3, 6, 7, 10, 2, 8, 9];
 
 // Using For loops
 function selectionSort(arr) {
-    // Creating a loop going through the whole loop
-    for (let i = 0; i < arr.length; i++) {
-        // Create a variable to hold the minIndex
-        let minIndex = i;
-        // Creating a loop to go through the array i + 1
-        for (let j = i + 1; j < arr.length; j++) {
-        // Create a if statement to check if the minIndex is smaller than the current value at arr[j]
-        if (arr[minIndex] > arr[j]) {
-            // If it is make j the new minIndex
-            minIndex = j;
-        }
-        }
-        // This is to swap the the minIndex into the arr
-        let temp = arr[minIndex];
-        arr[minIndex] = arr[i];
-        arr[i] = temp;
+  // Creating a loop going through the whole loop
+  for (let i = 0; i < arr.length; i++) {
+    // Create a variable to hold the minIndex
+    let minIndex = i;
+    // Creating a loop to go through the array i + 1
+    for (let j = i + 1; j < arr.length; j++) {
+      // Create a if statement to check if the minIndex is smaller than the current value at arr[j]
+      if (arr[minIndex] > arr[j]) {
+        // If it is make j the new minIndex
+        minIndex = j;
+      }
     }
-    // return the arr
-    return arr;
+    // This is to swap the the minIndex into the arr
+    let temp = arr[minIndex];
+    arr[minIndex] = arr[i];
+    arr[i] = temp;
+  }
+  // return the arr
+  return arr;
 }
 
 // test cases
